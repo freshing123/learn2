@@ -1,0 +1,30 @@
+<header class="detail-header">
+	<button class="back-button" ng-click="backHome()">返回</button>
+	确认订单
+</header>
+
+<div class="detail-content">
+	
+	<ul class="detail-list">
+		<li class="user-list">
+			<img src="img/pic.jpg" alt="">
+			<h2>爱国食堂</h2>
+		</li>
+		<li ng-repeat="item in shopList" ng-if="item.num">
+			<h3>{{ item.name }}</h3>
+			<div class="dinner-main">
+				<span class="dinner-price">￥{{ item.price }}<i>/{{ item.unit }}</i></span>
+				<div class="dinner-button-group">
+					<button class="jian" ng-click="jian($index)"></button>
+					<span>{{ item.num }}</span>
+					<button class="jia" ng-click="jia($index)"></button>
+				</div>
+			</div>
+				
+		</li>
+	</ul>
+</div>
+
+<footer class="detial-footer">
+	
+</footer>

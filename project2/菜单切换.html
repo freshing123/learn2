@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="yes" name="apple-touch-fullscreen">
+	<meta content="telephone=no,email=no" name="format-detection">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title></title>
+	<style type="text/css" media="screen">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			display: inline-block;
+			padding: 10px;
+			background: green;
+			cursor: pointer;
+		}
+		li.active {
+			background: red;
+		}
+	</style>
+</head>
+<body>
+
+<ul id="ul">
+	<li class="active">菜单一</li>
+	<li>菜单二</li>
+	<li>菜单三</li>
+	<li>菜单四</li>
+	<li>菜单五</li>
+</ul>
+	
+	<script src="jquery.min.js"></script>
+	<script>
+		
+		//js实现的菜单切换		
+
+		// var oUl = document.getElementById('ul'),
+		// 	aLi = oUl.getElementsByTagName('li');
+
+		// for(var i=0;i<aLi.length;i++){
+
+		// 	aLi[i].onclick = function(){
+		// 		for(var j=0;j<aLi.length;j++){
+		// 			aLi[j].className = '';
+		// 		}
+		// 		this.className = 'active';
+		// 	}
+		// } 
+
+
+		//js原生实现菜单切换	
+		//?
+
+		//jq普通版
+		// $('li').click(function(){
+		// 	$(this).addClass('active').siblings('li').removeClass('active');
+		// })
+
+		// for(var i=0;i<$('li').length;i++){
+		// 	$('li').eq(i).click(function(){
+		// 		$(this).addClass('active').siblings('li').removeClass('active');
+		// 	})	
+		// }
+
+
+
+
+	</script>
+</body>
+</html>
